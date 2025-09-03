@@ -1,0 +1,108 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_supportIDLabel##}">{##&modulSelect::core_supportIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_supportID" name="x_core_supportID">{##@modulSelect::x_core_supportID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::downloadURLLabel##}">{##&modulSelect::downloadURLTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="file" name="x_downloadURL" id="x_downloadURL" size="62" maxlength="100" value="">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::descriptionLabel##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_supportIDTitle##}">{##&modulSelect::core_supportIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_supportID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::downloadURLTitle##}">{##&modulSelect::downloadURLTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_downloadURL##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea readonly style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listPrevForm##
+##/listPrevForm##
+##listHeadForm##
+<div id="listHeader">
+	<div style="clear:both;"></div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::nameTitle##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_core_supportID>
+	<div id="itemView" style="width:100px;">{##@modulSelect::core_supportIDTitle##}</div>
+	</{##modulSelect##}_x_core_supportID>
+	<div id="itemView" style="width:100px;">{##@modulSelect::downloadURLTitle##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::insertWhenTitle##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div style="float:left;">
+		<div style="clear:both;"></div>
+		<div id="itemView" style="width:200px;">{##@modulSelect::x_name##}</div>
+		<div style="clear:both;height: 1px;"></div>
+		<{##modulSelect##}_x_core_supportID>
+		<div id="itemView" style="width:100px;">{##@modulSelect::x_core_support##}</div>
+		</{##modulSelect##}_x_core_supportID>
+		<div id="itemView" style="width:100px;">{##@modulSelect::x_downloadURL##}</div>
+		<{##modulSelect##}_x_insertWhen>
+		<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+		</{##modulSelect##}_x_insertWhen>
+	</div>
+	<div style="float:right;">
+		<div class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+	<{##modulSelect##}_x_description>
+	<div id="itemViewDescription">{##@modulSelect::x_description##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_description>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_supportIDTitle##}">{##&modulSelect::core_supportIDTitle##}</label><br>
+	<select style="width:150px;" id="s_core_supportID" name="s_core_supportID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_supportID##}
+	</select>
+</div>
+##/listFilterForm##

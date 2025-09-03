@@ -1,0 +1,74 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+<core_info_x_infogroupID>
+	<div id="itemTitle" class="col-sm-2">
+		<label title="{##&modulSelect::core_infogroupIDTitle##}">{##&modulSelect::core_infogroupIDTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-9">
+		<select {##&modulSelect::disabled##} class="form-control" style="width:150px;" id="x_core_infogroupID" name="x_core_infogroupID">{##@modulSelect::x_core_infogroupID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_info_x_infogroupID>
+	<div id="itemTitle" class="col-sm-2">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-9">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::infoTitle##}">{##&modulSelect::infoTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="21" cols="95" id="x_info" name="x_info">{##@modulSelect::x_info##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_info_x_description>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="4" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_info_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{##@modulSelect::core_infogroupIDTitle##}</div>
+	<div id="itemView" style="width:160px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="float:left;width:180px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:160px;">{##@modulSelect::x_core_infogroupName##}</div>
+	<div id="itemView" style="width:160px;">{##@modulSelect::x_name##}</div>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_info_x_info>
+	<div id="itemViewDescription">
+		{##@modulSelect::x_info##}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_info_x_info>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_infogroupIDTitle##}">{##&modulSelect::core_infogroupIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_core_infogroupID" name="s_core_infogroupID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_infogroupID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

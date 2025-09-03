@@ -1,0 +1,66 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::actionWhenTitle##}">{##&modulSelect::actionWhenTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_actionWhen##}" maxlength="200" id="x_actionWhen" name="x_actionWhen">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::activityTitle##}">{##&modulSelect::activityTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="11" cols="95" id="x_activity" name="x_activity">{##@modulSelect::x_activity##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_diary_x_description>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_diary_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader" class="col-sm-12">
+	<div id="itemView" class="col-sm-2">{##@modulSelect::actionWhenTitle##}</div>
+<core_diary_x_insertWhen>
+	<!-- div id="itemView" class="col-sm-2">{##@modulSelect::insertWhenTitle##}</div -->
+</core_diary_x_insertWhen>
+	<div id="itemView" class="col-sm-5"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_actionWhen##}</div>
+<core_diary_x_insertWhen>
+	<!-- div id="itemView" class="col-sm-2">{##@modulSelect::x_insertWhen##}</div-->
+</core_diary_x_insertWhen>
+	<div id="itemViewRight" class="col-sm-5">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_diary_x_activity>
+	<div id="itemViewDescription" class="col-sm-12">
+		{##@modulSelect::x_activity##}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_diary_x_activity>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<!-- select id="s_insertUserID_filter" name="s_insertUserID_filter" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID_filter##}
+	</select><br -->
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

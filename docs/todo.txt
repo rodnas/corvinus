@@ -1,0 +1,139 @@
+vagrant plugin install vagrant-disksize
+
+vagrant up		- létrehozás
+vagrant suspend		- megállítás
+vagrant resume		- indítás
+vagrant destroy 	- leállítás és törlés
+vagrant provision	- újrakonfigurálás
+
+bce_moodle	- 3.7.2+ (Build: 20190927)
+bce_eles	- 3.8.1+ (Build: 20200117)
+bce_test	- 3.3.1+ (Build: 20170714)
+
+update
+- config.php, config.php-bce marad, a többi törlés
+- moodle-latest-38.zip 3.8.1+ Build: 20200117) kicsomagolás
+- theme_adaptable_moodle38_2019112603.zip a theme könyvtárba kicsomagolás
+- Server checks
+
+- mod\activiquiz
+- mod\attendance
+- mod\checklist
+- mod\hvp
+- mod\mindmap
+- mod\oublog
+- mod\questeinnaire
+- mod\subcourse
+- mod\tquesteinnaire
+
+- blocks\chelpdesk
+- blocks\custom_course_menu
+- blocks\election
+- blocks\hok
+- blocks\message_board
+- blocks\semester
+- blocks\simple_clock
+- blocks\user_bookmarks
+
+- question\type\im
+- question\type\mrp
+- question\type\tlb
+
+- filter\multilang2
+
+- lib\editor\atto\plugins\fullscreen
+
+- enrol\kim
+
+- auth\cusman
+
+- admin\tool\coursearchiver
+- admin\tool\usertours
+
+- report\customreport
+
+nincsnek:
+- aforum -
+- attendancechart -
+- mplayer -
+- swf -
+
+- team
+
+- ioancalc -
+- msdnaa -
+- mycourses -
+- server_clock -
+
+- opensso -
+
+- bce -
+- bce1 -
+
+- klass
+
+- contact -
+- checkbox -
+- datetime -
+- label -
+- menu -
+- text -
+- textarea -
+- upload -
+
+3.3.1 bce_test-et nem szabad a plugin-eket frissíteni mert elrontja
+	(újra felépíteni, a mûködéshez)
+	
+3.8.1 bce_elesen kell frissíteni a plugin-eket
+
+bce_moodle új táblákból betöltve a bce_eles-be
+
+Update Moodle database now
+message_conversations
+
+Update Moodle database now
+analytics_models
+
+Update Moodle database now
+notifications
+
+Update Moodle database now
+analytics_models_log
+
+Update Moodle database now
+cohort + field (theme varchar(50), null Yes)
+
+Update Moodle database now
+analytics_train_samples
+
+Update Moodle database now
+messages
+
+Update Moodle database now
+message_conversation_members
+
+Update Moodle database now
+message_user_actions
+
+Update Moodle database now
+analytics_used_analysables
+
+Update Moodle database now
+analytics_prediction
+
+Update Moodle database now
+analytics_prediction_actions
+
+max_execution_time = 3000/ini_set ( 'max_execution_time', 1200);  beállítás
+
+nem fogadja megy: Fatal error: Maximum execution time of 600 seconds exceeded in /var/www/elesdata/lang/hu/quiz.php on line 28
+
+Folytatás következik!
+
+Update Moodle database now
+oauth2_issuer csere új verzióra
+
+logo adaptable segítségével, nem forrásba írva
+
+theme\adatablestyle\style\custom.css
+border: 1px solid #c6c6c6 !important !important;

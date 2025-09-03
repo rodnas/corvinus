@@ -1,0 +1,66 @@
+vagrant plugin install vagrant-disksize
+/* BCE MOD */
++SzS 2020.03.09. Begin 
+admin/tool/coursearchiver/cli/coursearchiver.php
+admin/tool/coursearchiver/classes/processor.php
+admin/tool/coursearchiver/classes/tracker.php
+admin/tool/coursearchiver/lang/en/tool_coursearchiver.php
+admin/tool/coursearchiver/lang/hu/tool_coursearchiver.php
+admin/user.php
+backup/moodle2/backup_root_task_class.php
+backup/moodle2/restore_qtype_plugin.class.php
+backup/util/ui/renderer.php
+blocks/course_overview/locallib.php
+blocks/online_users/block_online_users.php
+blocks/unline_users/lang/en/block_online_users.php
+blocks/online_users/setting.php
+blocks/online_users/version.php
+blocks/user_bookmarks/block_user_bookmarks.php
+blocks/user_bookmarks/create.php
+blocks/user_bookmarks/lang/en/block_user_bookmarks.php
+blocks/user_bookmarks/lang/hu/block_user_bookmarks.php
+blocks/course/moodleform_mod.php
+blocks/course/renderer.php
+blocks/course/search.php
+blocks/course/view.php
+enrol/locallib.php
+enrol/manual/ajax.php
+enrol/manual/lib.php
+enrol/manual/manage.php
+enrol/meta/lang/en/ebrol_meta.php
+enrol/meta/lib.php
+enrol/users.php
+grade/report/grader/lib.php
+lang/en/message.php
+lang/en/moodle.php
+lib/dml/moodle_database.php
+lib/form/tablegroup.php
+lib/formslib.php
+lib/moodledib.php
+lib/outputcomponents.php
+lib/outputrenderers.php
+lib/setup.php
+local/quizschedule/gettable.php
+local/usertours/classes/forms/editstep.php
+local/usertours/classes/helper.php
+local/usertours/classes/output/step.php
+local/usertours/classes/step.php
+mod/forum/lib.php
+mod/quiz/mod_form.php
+mod/workshop/lib.php
+theme/adaptable/lang/en/theme_adaptable.php
+theme/adaptable/lang/hu/theme_adaptable.php
+??theme/adaptable/layout/includes/header.php
+theme/adaptable/layout/report.php
+theme/adaptable/renderers.php
+theme/adaptable/settings/array_definitions.php
+theme/adaptable/settings/header_navbar.php
+user/edit.php
+user/editlib.php
+user/edit_form.php
+??user/index.php
+??user/messageselect.php
+/* CORVINUS HACK */
+index.php csere a 3.3.1
+index.php-org masolas a 3.3.1
+lib/enrollib.php

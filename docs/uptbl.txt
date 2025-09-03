@@ -1,0 +1,22 @@
+mdl_message_conversations
+mdl_message_conversations_actions
+mdl_message_conversations_members
+
+mdl_analytics_indicator_calc
+mdl_analytics_models
+mdl_analytics_models_log
+mdl_analytics_predictions
+mdl_analytics_prediction_actions
+mdl_analytics_predict_samples
+mdl_analytics_train_samples
+
+mdl_notifications
+mdl_analytics_used_analysables
+mdl_analytics_used_files
+
+mdl_cohort
+theme varchar(50) utf8mb4_unicode_ci Yes NULL
+
+mdl_messages
+
+message_user_actions

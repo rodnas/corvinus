@@ -1,0 +1,83 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_groupsIDLabel##}">{##&modulSelect::core_groupsIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_groupsID" name="x_core_groupsID">{##@modulSelect::x_core_groupsID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDLabel##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_configsID" name="x_core_configsID">{##@modulSelect::x_core_configsID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_groupsIDTitle##}">{##&modulSelect::core_groupsIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_groupsID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDTitle##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_configsID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<{##modulSelect##}_x_core_groupsID>
+	<div id="itemView" style="width:150px;">{##@modulSelect::core_groupsIDTitle##}</div>
+	</{##modulSelect##}_x_core_groupsID>
+	<{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:150px;">{##@modulSelect::core_configsIDTitle##}</div>
+	</{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-info-sign ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-plus ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-edit ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-trash ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-wrench ewIcon'></span></button></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<{##modulSelect##}_x_core_groupsID>
+	<div id="itemView" style="width:150px;">{##@modulSelect::x_core_groupsName##}</div>
+	</{##modulSelect##}_x_core_groupsID>
+	<{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:150px;">{##@modulSelect::x_core_configsName##}</div>
+	</{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_view##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_add##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_edit##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_delete##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_admin##}</div>
+	<div style="float:left;width:180px;" class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_configsIDTitle##}">{##&modulSelect::core_configsIDTitle##}</label>
+</div>
+<div id="itemView">
+	<select style="width:150px;" id="s_core_configsID" name="s_core_configsID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_configsID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_groupsIDTitle##}">{##&modulSelect::core_groupsIDTitle##}</label>
+</div>
+<div id="itemView" style="padding-right:5px;">
+	<select style="width:150px;" id="s_core_groupsID" name="s_core_groupsID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_groupsID##}
+	</select>
+</div>
+##/listFilterForm##

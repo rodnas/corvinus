@@ -1,0 +1,4 @@
+my.in/my.cnf ben:
+max_allowed_packet=500M
+binlog_format = mixed
+show_compatibility_56=ON ??

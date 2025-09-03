@@ -1,0 +1,112 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::systemTypeLabel##}">{##&modulSelect::systemTypeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_systemType##}" maxlength="10" size="10" id="x_systemType" name="x_systemType">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDLabel##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_configsID" name="x_core_configsID">{##@modulSelect::x_core_configsID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::fieldNameLabel##}">{##&modulSelect::fieldNameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_fieldName##}" maxlength="100" size="62" id="x_fieldName" name="x_fieldName">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::fieldValueLabel##}">{##&modulSelect::fieldValueTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="4" cols="80" id="x_fieldValue" name="x_fieldValue">{##@modulSelect::x_fieldValue##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::systemTypeLabel##}">{##&modulSelect::systemTypeTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_systemType##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDLabel##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_configsID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::fieldNameLabel##}">{##&modulSelect::fieldNameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_fieldName##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::fieldValueLabel##}">{##&modulSelect::fieldValueTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::insertWhenLabel##}">{##&modulSelect::insertWhenTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_insertWhen##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea readonly style="border: 1px solid #999999;" rows="4" cols="80" id="x_fieldValue" name="x_fieldValue">{##@modulSelect::x_fieldValue##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<{##modulSelect##}_x_systemType>
+	<div id="itemView" style="width:110px;">{##@modulSelect::systemTypeTitle##}</div>
+	</{##modulSelect##}_x_systemType>
+	<{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:100px;">{##@modulSelect::core_configsIDTitle##}</div>
+	</{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:300px;">{##@modulSelect::fieldNameTitle##}</div>
+	<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div>
+	</{##modulSelect##}_x_insertWhen>
+	<div style="clear:both;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<{##modulSelect##}_x_systemType>
+	<div id="itemView" style="width:110px;">{##@modulSelect::x_systemType##}</div>
+	</{##modulSelect##}_x_systemType>
+	<{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:100px;">{##@modulSelect::x_core_configs##}</div>
+	</{##modulSelect##}_x_core_configsID>
+	<div id="itemView" style="width:300px;">{##@modulSelect::x_fieldName##}</div>
+	<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+	</{##modulSelect##}_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;" class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;"></div>
+	<div id="itemViewDescription">{##@modulSelect::x_fieldValue##}</div>
+	<div style="clear:both;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::systemTypeTitle##}">{##&modulSelect::systemTypeTitle##}</label><br>
+	<select style="width:120px;" id="s_systemType" name="s_systemType" onchange="this.form.submit();">
+		{##@modulSelect::s_systemType##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_configsIDTitle##}">{##&modulSelect::core_configsIDTitle##}</label><br>
+	<select style="width:120px;" id="s_core_configsID" name="s_core_configsID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_configsID##}
+	</select>
+</div>
+##/listFilterForm##

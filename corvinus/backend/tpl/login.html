@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="hu">
+<head>
+	<meta charset="UTF-8" />
+	<title>{##systemTitle##}</title>
+	<meta name="Description" content="">
+	<meta name="Keywords" content="">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="hu">
+	<meta name="language" content="hu">
+	<link type="text/css" href="../index.php?systemType=backend&amp;cssconvert=login&resolution=0" rel="stylesheet">
+	<script src="../share/js/jquery-1.10.1.min.js"></script>
+	<link rel="icon" href="" />
+</head>
+<body class="bodyPage">
+	<div id="htmlPage">
+	<div id="header">
+		<div id="headerText">{##shortSystemName##}</div>
+	</div>
+	<div style="clear:both;height:10px;"></div>
+	<div id="loginBox">
+		<div id="loginBoxHeader">
+			<h3>{##loginBoxHeaderText##}</h3>
+		</div>
+		<div class="adminLogin">
+			<form id="loginForm" method="post" action="">
+			<div id="contentFrame"{##marginLeft##}>
+				<div style="clear:both;height: 10px;"></div>
+				<div id="itemTitle" style="width:100px;">
+					<label title="{##loginNicknameLabelTitle##}">{##loginNicknameLabel##}</label>
+				</div>
+				<div id="itemView">
+					<input type="text" name="x_nickname" id="x_nickname" value="{##x_nickname##}" />
+				</div>
+				<div style="clear:both;height: 10px;"></div>
+				<div id="itemTitle" style="width:100px;">
+					<label title="{##loginPasswordLabelTitle##}">{##loginPasswordLabel##}</label>
+				</div>
+				<div id="itemView">
+					<input type="password" name="x_password" id="x_password" value="" />
+				</div>
+				<div style="clear:both;height: 10px;"></div>
+				<div class="row">
+					<div id="loginButton">
+					<input type="submit" title="{##loginSubmitButtonText##}" class="enter" value="{##loginSubmitButtonText##}" name="save">
+					</div>
+				</div>
+				<div id="errorMess"></div>
+			</div>
+			<div style="clear:both;height: 10px;"></div>
+			</form>
+		</div>
+	</div>
+	<div style="clear:both;height:10px;"></div>
+	<div id="footer">
+		<div id="copyright">{##configShare::copyrightTitle##}</div>
+		<div id="runtime">{##runTime##}</div>
+	</div>
+	</div>
+</body>
+</html>

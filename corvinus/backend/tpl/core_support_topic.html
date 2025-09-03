@@ -1,0 +1,41 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:100px;">{##@modulSelect::actionCountTitle##}</div>
+<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" style="width:200px;">{##@modulSelect::insertWhenTitle##}</div>
+</{##modulSelect##}_x_insertWhen>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_name##}</div>
+	<div id="itemRightView" style="width:100px;">{##@modulSelect::x_actionCount##}</div>
+<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_insertWhen##}</div>
+</{##modulSelect##}_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 0px;"></div>
+</div>
+##/listItemForm##

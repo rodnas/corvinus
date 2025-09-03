@@ -1,0 +1,133 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::core_activitymodulIDTitle##}">{##&modulSelect::core_activitymodulIDTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<select {##&modulSelect::disabled##} class="form-control" style="width:150px;" id="x_core_activitymodulID" name="x_core_activitymodulID">{##@modulSelect::x_core_activitymodulID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::pluginNameTitle##}">{##&modulSelect::pluginNameTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_pluginName##}" maxlength="200" id="x_pluginName" name="x_pluginName">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::componentNameTitle##}">{##&modulSelect::componentNameTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_componentName##}" maxlength="200" id="x_componentName" name="x_componentName">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::pluginVersionTitle##}">{##&modulSelect::pluginVersionTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_pluginVersion##}" maxlength="200" id="x_pluginVersion" name="x_pluginVersion">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::availabilityTitle##}">{##&modulSelect::availabilityTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_availability##}" maxlength="200" id="x_availability" name="x_availability">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::activityTitle##}">{##&modulSelect::activityTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_activity##}" maxlength="200" id="x_activity" name="x_activity">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::core_plugin_statusIDTitle##}">{##&modulSelect::core_plugin_statusIDTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<select {##&modulSelect::disabled##} class="form-control" style="width:150px;" id="x_core_plugin_statusID" name="x_core_plugin_statusID">{##@modulSelect::x_core_plugin_statusID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::notesTitle##}">{##&modulSelect::notesTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_notes" name="x_notes">{##@modulSelect::x_notes##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_plugin_x_description>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_plugin_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader" class="col-sm-12">
+	<div id="itemView" class="col-sm-2">{##@modulSelect::core_activitymodulIDTitle##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::pluginNameTitle##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::componentNameTitle##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::pluginVersionTitle##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::availabilityTitle##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::activityTitle##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::core_plugin_statusIDTitle##}</div>
+<core_plugin_x_insertWhen>
+	<!-- div id="itemView" class="col-sm-2">{##@modulSelect::insertWhenTitle##}</div -->
+</core_plugin_x_insertWhen>
+	<div id="itemView" class="col-sm-2"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+	<div style="clear:both;height: 1px;"></div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_core_activitymodulName##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_pluginName##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_componentName##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::x_pluginVersion##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::x_availability##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::x_activity##}</div>
+	<div id="itemView" class="col-sm-1">{##@modulSelect::x_core_plugin_statusName##}</div>
+<core_plugin_x_insertWhen>
+	<!-- div id="itemView" class="col-sm-2">{##@modulSelect::x_insertWhen##}</div-->
+</core_plugin_x_insertWhen>
+	<div id="itemViewRight" class="col-sm-2">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+<core_plugin_x_notes>
+	<div id="itemViewDescription" class="col-sm-12">
+		{##@modulSelect::x_notes##}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</core_plugin_x_notes>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_activitymodulIDTitle##}">{##&modulSelect::core_activitymodulIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_core_activitymodulID" name="s_core_activitymodulID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_activitymodulID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_plugin_statusIDTitle##}">{##&modulSelect::core_plugin_statusIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_core_plugin_statusID" name="s_core_plugin_statusID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_plugin_statusID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<!-- select id="s_insertUserID_filter" name="s_insertUserID_filter" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID_filter##}
+	</select><br -->
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

@@ -1,0 +1,69 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::titleLabel##}">{##&modulSelect::titleTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_title##}" maxlength="100" size="62" id="x_title" name="x_title">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::tplNameLabel##}">{##&modulSelect::tplNameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_tplName##}" maxlength="100" size="62" id="x_tplName" name="x_tplName">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameTitle##}">{##@modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::titleTitle##}">{##&modulSelect::titleTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_title##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::tplNameTitle##}">{##&modulSelect::tplNameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_tplName##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:150px;">{##&modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:150px;">{##&modulSelect::titleTitle##}</div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-info-sign ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-plus ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-edit ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-trash ewIcon'></span></button></div>
+	<div id="itemView" style="width:34px;"><button class='buttonBox' id='subMenuHeight24'><span class='glyphicon glyphicon-wrench ewIcon'></span></button></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:150px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:150px;">{##@modulSelect::x_title##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_view##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_add##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_edit##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_delete##}</div>
+	<div id="itemView" style="width:34px;">{##@modulSelect::x_admin##}</div>&nbsp;
+	<div style="float:left;width:180px;" class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

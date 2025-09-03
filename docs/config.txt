@@ -1,0 +1,5 @@
+dmlreadexception
+my.ini/my.cnf
+mysqld szekció
+max_allowed_packet=500M
+show_compatibility_56=ON ??

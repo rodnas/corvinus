@@ -1,0 +1,61 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::bgcolorLabel##}">{##&modulSelect::bgcolorTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_bgcolor##}" maxlength="7" size="7" id="x_bgcolor" name="x_bgcolor">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::fgcolorLabel##}">{##&modulSelect::fgcolorTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_fgcolor##}" maxlength="7" size="7" id="x_fgcolor" name="x_fgcolor">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::bgcolorTitle##}">{##&modulSelect::bgcolorTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_bgcolor##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::fgcolorTitle##}">{##&modulSelect::fgcolorTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_fgcolor##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::bgcolorTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::fgcolorTitle##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}" style="background-color:{##@modulSelect::x_bgcolor##};color:{##@modulSelect::x_fgcolor##};">
+	<div id="itemView" style="width:160px;height:25px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:80px;height:25px;">{##@modulSelect::x_bgcolor##}</div>
+	<div id="itemView" style="width:80px;height:25px;">{##@modulSelect::x_fgcolor##}</div>
+	<div class="itemViewRight">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

@@ -1,0 +1,44 @@
+.body {background-color:transparent;margin-top:0;}
+#htmlPage {margin:0 auto 0 auto;width:300px;}
+INPUT, TEXTAREA, SELECT
+	{
+font-size: 12px; color: #555555; TEXT-DECORATION: none;LINE-HEIGHT: 1.4em;text-align:justify;border-radius:5px;
+/*    border-style: none solid none none;*/
+/*    border-width: medium 1px medium medium;*/
+/*
+font-size: 14px;
+LINE-HEIGHT: 1.4em;
+   -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #ffffff;
+    border-color: -moz-use-text-color transparent -moz-use-text-color -moz-use-text-color;
+    border-radius: 5px 5px 5px 5px;
+    border-style: none solid none none;
+    border-width: medium 1px medium medium;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    color: #555555;
+*/
+	}
+.baseFont {font-size: 12px;text-decoration: none;}
+
+#loginBox {margin-left:auto;margin-right:auto;width:300px;border-radius: 5px 5px 5px 5px;background-color:{##actualBgColor##};border:2px solid #000000;}
+#loginBoxHeader {background-color:{##actualBgColor##};border-radius: 5px 5px 0px 0px;height:30px;margin-top: -20px;}
+#header {margin-left:auto;margin-right:auto;width:100%;background-color:{##actualBgColor##};border-radius: 8px 8px 8px 8px;border:2px solid #000000;border-radius:6px;border-style:solid;}
+#footer	{margin-left:auto;margin-right:auto;width:100%;background-color:{##actualBgColor##};border-radius: 8px 8px 8px 8px;float:left;border:2px solid #000000;border-radius:6px;border-style:solid;}
+#headerText {margin-left:20px;color:#ffffff;padding-top:5px;font-size:36px;margin-top:0px;}
+h3 {margin-left:20px;color:#ffffff;padding-top:5px;}
+.label {float:left;width:100px;color:#808000;font-wight:bold;}
+.row {padding:5px;}
+#rowError {padding:5px;color:red;text-align:center;}
+#errorText {color: red;}
+#copyright {margin-left:10px;font-size:11px;color:#ffffff;float:left;}
+#runtime {margin-right:10px;font-size:11px;color:#ffffff;float:right;}
+#loginButton{width:80px;text-align:center;margin-left:auto;margin-right:auto;}
+#errorMessageText {text-align:center;font-size: 14px;text-decoration: none;color:red;padding-top:5px;}
+#itemTitle {float:left;padding:2px;text-align:left;font-size: 11px;text-decoration: none;background-color:#DDDDDD;margin-left:5px;border-radius:5px;margin-left:20px;}
+#itemView {float:left;text-align:left;margin-left:5px;font-size: 11px;text-decoration: none;}
+.enter {background: url('{##imgURL##}ok.png');background-position:center;width: 36px;height: 36px;border: 0;cursor: pointer;}
+#contentFrame {width:98%;top:5px;text-align:center;background-color:#cccccc;border:solid 1px;margin:auto;margin-top:5px;border-radius:5px;}

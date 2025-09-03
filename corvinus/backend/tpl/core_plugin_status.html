@@ -1,0 +1,41 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" class="col-sm-2">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-9">
+		<input class="form-control" type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle" class="col-sm-12">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea class="form-control" style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:90px;">{##@modulSelect::actionCountTitle##}</div>
+<core_infogroup_x_insertWhen>
+	<div id="itemView" style="width:200px;">{##@modulSelect::insertWhenTitle##}</div>
+</core_infogroup_x_insertWhen>
+	<div id="itemView" style="float:left;width:180px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:90px;text-align:right;">{##@modulSelect::x_actionCount##}</div>
+<core_infogroup_x_insertWhen>
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_insertWhen##}</div>
+</core_infogroup_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

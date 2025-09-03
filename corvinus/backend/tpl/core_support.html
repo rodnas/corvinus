@@ -1,0 +1,209 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="100" size="62" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_core_configsID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDLabel##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_configsID" name="x_core_configsID">{##@modulSelect::x_core_configsID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_core_configsID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_topicIDLabel##}">{##&modulSelect::core_support_topicIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_support_topicID" name="x_core_support_topicID">{##@modulSelect::x_core_support_topicID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_core_support_typeID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_typeIDLabel##}">{##&modulSelect::core_support_typeIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_support_typeID" name="x_core_support_typeID">{##@modulSelect::x_core_support_typeID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_core_support_typeID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_statusIDLabel##}">{##&modulSelect::core_support_statusIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_core_support_statusID" name="x_core_support_statusID">{##@modulSelect::x_core_support_statusID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_planTime>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::planTimeLabel##}">{##&modulSelect::planTimeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_planTime##}" maxlength="8" size="8" id="x_planTime" name="x_planTime">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_planTime>
+	<{##modulSelect##}_x_realTime>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::realTimeLabel##}">{##&modulSelect::realTimeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_realTime##}" maxlength="8" size="8" id="x_realTime" name="x_realTime">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_realTime>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::descriptionLabel##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_configsIDTitle##}">{##&modulSelect::core_configsIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_configsID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_topicIDTitle##}">{##&modulSelect::core_support_topicIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_support_topicID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_typeIDTitle##}">{##&modulSelect::core_support_typeIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_support_typeID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_support_statusIDTitle##}">{##&modulSelect::core_support_statusIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_core_support_statusID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_planTime>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::planTimeTitle##}">{##&modulSelect::planTimeTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_planTime##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_realTime>
+	<{##modulSelect##}_x_realTime>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::realTimeTitle##}">{##&modulSelect::realTimeTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_realTime##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_realTime>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea readonly style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div style="clear:both;"></div>
+	<div id="itemView" style="width:200px;"><b>{##@modulSelect::nameTitle##}</b></div>
+	<div id="itemView" style="width:90px;"><b>{##@modulSelect::actionCountTitle##}</b></div>
+	<div style="clear:both;"></div>
+	<div id="itemView" style="width:100px;"><b>{##@modulSelect::planTimeTitle##}</b></div>
+	<div id="itemView" style="width:80px;"><b>{##@modulSelect::realTimeTitle##}</b></div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_core_support_topicID>
+	<div id="itemView" style="width:80px;padding-left:20px;">{##@modulSelect::core_support_topicIDTitle##}</div>
+	</{##modulSelect##}_x_core_support_topicID>
+	<{##modulSelect##}_x_core_support_typeID>
+	<div id="itemView" style="width:80px;">{##@modulSelect::core_support_typeIDTitle##}</div>
+	</{##modulSelect##}_x_core_support_typeID>
+	<{##modulSelect##}_x_core_support_statusID>
+	<div id="itemView" style="width:80px;">{##@modulSelect::core_support_statusIDTitle##}</div>
+	</{##modulSelect##}_x_core_support_statusID>
+	<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div>
+	</{##modulSelect##}_x_insertWhen>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div style="float:left;">
+		<div style="clear:both;"></div>
+		<div id="itemView" style="width:200px;"><b>{##@modulSelect::x_name##}</b></div>
+		<div id="itemView" style="width:90px;text-align:right;"><b>{##@modulSelect::x_actionCount##}</b></div>
+		<div style="clear:both;"></div>
+		<div id="itemView" style="width:100px;text-align:right;"><b>{##@modulSelect::x_planTime##}</b></div>
+		<div id="itemView" style="width:80px;text-align:right;"><b>{##@modulSelect::x_realTime##}</b></div>
+		<div style="clear:both;"></div>
+		<{##modulSelect##}_x_core_support_topicID>
+		<div id="itemView" style="width:80px;padding-left:20px;">{##@modulSelect::x_core_support_topic##}</div>
+		</{##modulSelect##}_x_core_support_topicID>
+		<{##modulSelect##}_x_core_support_typeID>
+		<div id="itemView" style="width:80px;">{##@modulSelect::x_core_support_type##}</div>
+		</{##modulSelect##}_x_core_support_typeID>
+		<{##modulSelect##}_x_core_support_statusID>
+		<div id="itemView" style="width:80px;min-height:30px;">{##@modulSelect::x_core_support_status##}</div>
+		</{##modulSelect##}_x_core_support_statusID>
+		<{##modulSelect##}_x_insertWhen>
+		<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+		</{##modulSelect##}_x_insertWhen>
+	</div>
+	<div style="float:right;">
+		<div class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+	<{##modulSelect##}_x_description>
+	<div id="itemViewDescription">{##@modulSelect::x_description##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_description>
+</div>
+##/listItemForm##
+##listFilterForm##
+<{##modulSelect##}_s_core_configsID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_configsIDTitle##}">{##&modulSelect::core_configsIDTitle##}</label><br>
+	<select style="width:120px;" id="s_core_configsID" name="s_core_configsID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_configsID##}
+	</select>
+</div>
+</{##modulSelect##}_s_core_configsID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_support_topicIDTitle##}">{##&modulSelect::core_support_topicIDTitle##}</label><br>
+	<select style="width:120px;" id="s_core_support_topicID" name="s_core_support_topicID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_support_topicID##}
+	</select>
+</div>
+<{##modulSelect##}_s_core_support_typeID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_support_typeIDTitle##}">{##&modulSelect::core_support_typeIDTitle##}</label><br>
+	<select style="width:120px;" id="s_core_support_typeID" name="s_core_support_typeID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_support_typeID##}
+	</select>
+</div>
+</{##modulSelect##}_s_core_support_typeID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_support_statusIDTitle##}">{##&modulSelect::core_support_statusIDTitle##}</label><br>
+	<select style="width:120px;" id="s_core_support_statusID" name="s_core_support_statusID" onchange="this.form.submit();">
+		{##@modulSelect::s_core_support_statusID##}
+	</select>
+</div>
+##/listFilterForm##

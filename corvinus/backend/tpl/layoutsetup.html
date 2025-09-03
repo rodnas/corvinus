@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="hu">
+<head>
+<title>{##systemTitle##}</title>
+<meta name="Description" content="{##metaDescriptionHTML##}">
+<meta name="Keywords" content="{##metaKeywordsHTML##}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="hu">
+<meta name="language" content="hu">
+<link type="text/css" href="css/font-awesome.css" rel="stylesheet">
+<link type="text/css" href="../index.php?systemType=backend&amp;cssconvert=backend&amp;resolution=0" rel="stylesheet">
+<script src="../share/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../index.php?systemType=backend&amp;jsconvert=backend"></script>
+<link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <script src="../backend/js/backend.js"></script>
+    <script src="bootstrap3/js/jquery-1.12.1.min.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/utils.js"></script>
+{##pageStartHTML##}
+</head> 
+<body class="bodyPage">
+<div id="htmlPageSetup">
+	<div id="topHeaderBox">
+		<div id="logoBox">{##topLogoHTML##}</div>
+		<form method="post" name="topform" action="">
+			<div id="loginBox">{##loginServiceHTML##}</div>
+			<div id="developBox">{##topDevelopHTML##}</div>
+			<div id="themesBox">{##themesHTML##}&nbsp;{##langsHTML##}</div>
+		</form>
+		<div style="clear:both;"></div>
+		{##topMessageHTML##}
+		<div style="clear:both;"></div>
+	</div>
+
+	{##topMenuHTML##}
+
+	<div id="contentBox" class="col-sm-12">
+		<!-- div id="contentText" class="col-sm-6" -->
+			<form method="post" name="searchFilterform" action="">
+			{##topStatusHTML##}
+			<div id="searchFilter">
+				<div style="clear:both;"></div>
+				<div id="searchBox">
+				{##topSearchBasicHTML##}
+				</div>
+				{##listFilterFullHTML##}
+				<div style="clear:both;"></div>
+			</div>
+			</form>
+			{##statusMessageHTML##}
+			<div style="clear:both;"></div>
+			{##formStartHTML##}
+			<div style="width:100%;">
+				{##contentHTML##}
+			</div>
+			{##formStopHTML##}
+		<!-- /div>
+		<div id="contentText" class="col-sm-6">
+			{##diagram##}
+		</div -->
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;height:2px;"></div>
+	<div id="footerBox">
+		<div id="footerText">
+			{##configShare::copyrightTitle##}
+			<div id="runtime">{##runTime##}</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

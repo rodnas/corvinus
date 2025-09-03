@@ -1,0 +1,14 @@
+<block>
+<date>2019.07.02.</date>
+<info>
+Ubuntu Linux 18.04
+==================
+Corvinus Moodle site beindítása localhost-on.
+Plugin-ek frissítése.
+Upgrade megkísérlése 3.3.1+ -es 3.7+ -ra.
+Sajnos nem sikerül, de teljsen mást jelez mint a windows-alatt.
+Táblákat hiányol, beraktam a a külön telepített Moodle-ből a táblákat, ezeket akkor továbbmegy, sajnos a végén még mindig elhasal.
+Majd Beni-ékkel megnézetem, nem kell még egyéb dolgokat is beállítani, atest serveren van moodle.crt, moodle.key ezek is lehet befolyásolják a működést.
+A külön telepített 3.6.3+ simánt tudtam 3.7+ra frissíteni.
+</info>
+</block>

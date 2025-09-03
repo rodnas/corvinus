@@ -1,0 +1,35 @@
+sandor.szabo2@uni-corvinus.hu
+ssandor/qi2lGt
+
+https://webmail.uni-corvinus.hu/?loginOp=logout
+
+moodle3test.uni-corvinus.hu 
+
+moodle3dev.uni-corvinus.hu / ssandor / Alma1234
+
+https://otrs.uni-corvinus.hu/otrs/index.pl?Action=AgentDashboard
+
+https://cusmanweb.uni-corvinus.hu/webapp/WEBControllerJSP.jsp
+
+https://vcs.uni-corvinus.hu/users/sign_in
+
+http://localhost/my/
+
+admin/Phoenix0204!
+
+http://portal.office.com sandor.szabo2@uni-corvinus.hu/qi2lGt
+
+/** Hack administrator begin **/
+$CFG->loginhttps=false;
+$CFG->siteadmins='2,86661';
+// SELECT * FROM mdl_config WHERE name = 'siteadmins'
+/** Hack administrator end **/
+
+Péter által
+ssandor/fdsafdsafdsafsa
+
+
+https://unicorvinus-my.sharepoint.com/:w:/g/personal/peter_balkanyi_uni-corvinus_hu/EZslJVEz4aNOkxltze2i77cBmMtoJrp5oo3K9-9U4Upsrg?rtime=yd-8WUZC10g
+https://unicorvinus-my.sharepoint.com/:x:/r/personal/peter_balkanyi_uni-corvinus_hu/_layouts/15/Doc.aspx?sourcedoc={b2ede050-eef2-4620-ac6c-9605b175a5c0}&action=edit&activeCell='FELADATOK'!C18&wdInitialSession=7385a184-473f-44bd-a8ab-a8a2b3a7f46f&wdRldC=1
+https://unicorvinus-my.sharepoint.com/:x:/r/personal/peter_balkanyi_uni-corvinus_hu/_layouts/15/Doc.aspx?sourcedoc={b2ede050-eef2-4620-ac6c-9605b175a5c0}&action=edit&activeCell='FELADATOK'!C18&wdInitialSession=c6248b0a-103f-4339-8657-93c44719a2bd&wdRldC=1
+https://unicorvinus-my.sharepoint.com/:x:/r/personal/peter_balkanyi_uni-corvinus_hu/_layouts/15/Doc.aspx?sourcedoc={99e4ad2b-4680-457e-8d95-18bc1d7dd6e1}&action=edit&activeCell='Hibajegyek'!B14&wdInitialSession=ef586125-88a7-46b2-8437-9faf73fd9651&wdRldC=1
